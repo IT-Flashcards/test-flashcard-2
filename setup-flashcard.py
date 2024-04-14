@@ -9,6 +9,6 @@ script_dir = os.path.dirname(script_path)
 
 def open_vscode_and_run_ng(directory):
     subprocess.Popen(["C:\\Users\\vagrant\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe", directory])
-    subprocess.Popen(["cmd", "/K", "cd /d " + directory + " && ng s -o"], creationflags=subprocess.CREATE_NEW_CONSOLE)
+    subprocess.Popen(["cmd", "/K", "cd /d " + directory + " && npm install && ng s -o"], creationflags=subprocess.CREATE_NEW_CONSOLE)
 
 open_vscode_and_run_ng(script_dir)
